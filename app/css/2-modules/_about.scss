@@ -1,0 +1,117 @@
+$about_indicator-text-color:#333;
+$about_indicator-color:#333;
+
+.about {
+    height: 100%;
+	margin: 8% 0 0 0;
+    background: url(../../img/block_content/pro.png) no-repeat 100% 10%,
+	url(../../img/block_content/bass.png) no-repeat 0% 65%;
+	background-size: 45%, 50%;
+	padding-bottom: 5%;
+    background-color: #fff;
+}
+.about__content {
+    max-width: 1000px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+.about__content_margin-text {
+	margin: 5% 9% 5% 5%;
+}
+
+.about__content_margin-titel {
+	margin: 5% 0 5% 0%;
+}
+
+.about__title,
+.about__text__buttom-line {
+    text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.about__text__title {
+    font-weight: bold;
+}
+.about__title {
+	font-size: 230%;
+	margin-bottom: 0;
+	text-indent: 0.5em;
+}
+.about__text,
+.about__text__title {
+	font-size: 130%;
+	color: #333;
+}
+.about__text {
+	margin-bottom: 5px;
+}
+.about__text {
+    text-align: justify;
+}
+.about__text__title, 
+.about__text {
+    margin-left: 190px;
+	margin-right: 5px;
+}
+.about__text__buttom-line {
+    height: 2px;
+    width: 130px;
+    background-color:  #f36f21;
+}
+.about__indicator__text::after  {
+    content: 'About us';
+    width: 90px;
+    position: relative;
+    display: block;
+    top: -2px;
+    left: 20px;
+    text-transform:uppercase;
+    font-size: 80%;
+
+}
+.about_indicator-color {
+   border: 1px solid $about_indicator-color; 
+   background: $about_indicator-color;
+}
+.about_indicator-text-color {
+   color:$about_indicator-text-color;
+    margin: 0 60px;
+    cursor:default;
+    user-select:none;
+}
+@media screen and (max-width: 1200px) {
+     /* start of large tablet styles */
+    .about__content {
+        margin-left: 5%;
+        margin-right: 5%;
+        transition: all 1s ease;
+    }
+    .about_indicator-color {
+        border: 1px solid $about_indicator-color; 
+    }
+
+ 
+}
+@media screen and (max-width: 767px) {
+     /* start of medium tablet styles */
+    .about__text__title, 
+    .about__text {
+        margin-left: 0;
+    }
+	.about__title {
+        font-size: 230%;
+        margin-bottom: 0;
+        text-indent: 0.5em;
+	}
+    .about__text__title, 
+    .about__text {
+             transition: all 1s ease;
+    }
+    
+
+}
+@media screen and (max-width: 479px) {
+	.about {
+    	background-size: 70%, 70%;
+	}
+}

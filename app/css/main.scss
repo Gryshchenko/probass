@@ -1,0 +1,33 @@
+// 0 - TOOLS
+@import '0-tools/fonts';
+@import '0-tools/normalize';
+@import '0-tools/font-awesome.min';
+//@import '0-tools/example';
+@import '0-tools/ionicons';
+@import '0-tools/smooth-scrollbar';
+@import '0-tools/animations';
+
+// 1 - BASE
+@import '1-base/body-element';
+@import '1-base/selection-colors';
+@import '1-base/links';
+@import '1-base/typography';
+
+// 2 - MODULES
+@import '2-modules/head_logo';
+@import '2-modules/nav';
+@import '2-modules/botton-button';
+@import '2-modules/header';
+@import '2-modules/about';
+@import '2-modules/works';
+@import '2-modules/slider';
+@import '2-modules/content-block';
+@import '2-modules/content-block_two';
+@import '2-modules/content-block_three';
+@import '2-modules/why-we';
+@import '2-modules/contacts';
+@import '2-modules/footer';
+
+
+// 3 - LAYOUTS
+@import '3-layouts/home';

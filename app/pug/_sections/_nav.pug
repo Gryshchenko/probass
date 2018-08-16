@@ -1,0 +1,24 @@
+- nav__item__links = ['Home','About us', 'We create for you','MX101','MX102','MX201','Contacts']
+
+mixin nav-content()
+	label(for="nav-toggle" class="nav-toggle" onclick)
+	ul.nav__list
+		li.nav__item
+			a(href="#section-1").nav__item__links Home
+		li.nav__item
+			a(href="#section-2").nav__item__links About us
+		li.nav__item
+			a(href="#section-3").nav__item__links Products
+		li.nav__item
+			a(href="#section-4").nav__item__links MX101
+		li.nav__item
+			a(href="#section-5").nav__item__links MX102
+		li.nav__item
+			a(href="#section-6").nav__item__links MX201
+		li.nav__item
+			a(href="#section-7").nav__item__links Contacts
+
+input(type="checkbox" id="nav-toggle" hidden)
+
+nav.nav.fade-in.one#navigation-menu.opacity.js--wp-8
+	+nav-content()

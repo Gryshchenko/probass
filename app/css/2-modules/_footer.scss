@@ -1,0 +1,72 @@
+.footer__nav__links, 
+.footer__license__text {
+	text-transform: uppercase;
+	color: #333;
+}
+footer {
+	padding: 3% 0;
+    background-color: #ffffff;
+}
+.footer__nav__links,
+.ion-android-remove {
+	margin: 2px 8px 2px 8px;
+}
+.footer__logo {
+	margin-top: 20px;
+    fill:red;
+}
+.footer__flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.footer__content_flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around
+}
+.footer_logo {
+	height: 23px;
+	width: 105px;
+	background-image: url(../../img/contacts/logo%20black.svg);
+		background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+@media screen and (max-width: 767px) {
+     /* Small phones to small tablets: from 481px to 767px*/
+	.footer__nav__links,
+	.ion-android-remove {
+		margin: 2px 4px 2px 4px;
+        transition: all 1s ease;
+	}
+}
+@media screen and (max-width: 479px) {
+     /* Small phones: from 0 to 480px*/
+	.footer__nav__links {
+		margin: 5px 2px 5px 2px;
+		text-align: center;
+	}
+	.footer__flex,
+	.footer__content_flex{
+		flex-direction: column;
+	}
+	.footer__license {
+		text-align: center;
+	}
+	.ion-android-remove {
+		display: none;
+	}
+    .footer__nav__links,
+    .footer__flex,
+	.footer__content_flex,
+    .footer__license {
+        transition: all 1s ease;
+    }
+	.footer__license__text {
+		font-size: 75%;
+		padding-top: 10px;
+	}
+}
+
+

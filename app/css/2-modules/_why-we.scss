@@ -1,0 +1,69 @@
+.whywe {
+	max-height: 420px;
+	height: 420px;
+	background: url(../../img/block_content/pro_why.png) no-repeat 0% -20%,
+	url(../../img/block_content/bass_why.png) no-repeat 105% 100%;
+	
+	background-size: 50%, 40%;
+}
+.whywe_background {
+    background-image: url(../../img/block_content/why-we_background.jpg);
+    background-size: cover;
+    background-color:#3d3d3d; 
+}
+.content__whywe {
+	margin-top: 5%;
+}
+.content-whywe__text__buttom-line {
+    height: 2px;
+    width: 400px;
+    background-color: #f36f21;
+}
+.content__whywe__text {
+	margin-bottom: 5px;
+	text-indent: 2em;
+	text-align: justify;
+    font-size: 130%;
+    color: #ffffff;
+}
+.content__whywe__text_bold {
+	font-weight: bold;
+}
+@media screen and (max-width: 1200px) { 
+
+}
+@media screen and (max-width: 767px) {
+     /* start of phone styles */
+    .content__whywe__text {
+        margin-bottom: 5px;
+        text-indent: 0;
+        text-align: justify;
+    }
+    .content-whywe__text__buttom-line {
+        height: 2px;
+        width: 250px;
+        background-color: #f36f21;
+    }
+    .content__whywe__text,
+    .content-whywe__text__buttom-line {
+        transition: all 1s ease;
+    }
+	.whywe {
+		height: 350px;
+		background: url(../../img/block_content/pro_why.png) no-repeat 0% -5%,
+		url(../../img/block_content/bass_why.png) no-repeat 105% 80%;
+		background-color:#3d3d3d; 
+		background-size: 60%, 60%;
+	}
+    .whywe_background {
+        background-image: none;
+        background-color:#3d3d3d; 
+    }
+    
+}
+@media screen and (max-width: 479px) { 
+		.whywe {
+		
+		background-size: 70%, 70%;
+	}
+}

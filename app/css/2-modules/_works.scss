@@ -1,0 +1,174 @@
+$works_indicator-text-color:#fff;
+$works_indicator-color:#fff;
+
+.works {
+    height: 100%;
+	padding-top: 8%;
+	padding-bottom: 5%;
+    background: 
+	url(../../img/block_content/product.png) no-repeat -6% 35%,
+	url(../../img/block_content/duct.png) no-repeat 110% 90%;
+    background-size: 50%, 60%;
+	
+}
+.works_background {
+    background-image: url(../../img/block_content/works_background.png);
+	background-image: -webkit-image-set( "../../img/block_content/works_background.png" 1x,  "../../img/block_content/works_background_large.png" 2x);
+  	background-image: image-set ("../../img/block_content/works_background.png" 1x, "../../img/block_content/works_background_large.png" 2x);
+    background-size: cover;
+    background-color: #3d3d3d;
+}
+.works__title,
+.works__text__list {
+    color: #ffffff;
+}
+.works__link {
+	color: #ffffff;
+}
+.works__link:hover  {
+	color: #f36f21;
+}
+
+.works__content_margin-text {
+	margin: 5% 10% 0 5%;
+}
+
+.works__content_margin-titel {
+	margin: 5% 0 5% 0;
+}
+
+.works__title{
+    text-transform:uppercase;
+	margin-bottom: 0;
+}
+.works__title_text-indent {
+    text-indent: 2em;
+}
+.works__text__title {
+    font-weight: bold;
+} 
+.works__text {
+    text-align: justify;
+    padding-left: 90px;
+    max-width: 800px;
+	font-size: 130%;
+	color: #fff;
+}
+.works__text_padding {
+	padding-top: 35px;
+}
+
+.works__text__second {
+	font-weight: bold;
+}
+.works__text__buttom-line {
+    height: 2px;
+    width: 108px;
+    background-color: #f36f21;
+    margin-left: 114px;
+}
+.works__indicator__text::after  {
+    content: 'We create for you';
+    width: 90px;
+    position: relative;
+    display: block;
+    top: -2px;
+    left: 20px;
+    text-transform:uppercase;
+    font-size: 80%;
+    color: #ffffff;
+
+}
+.works_indicator-color {
+   border: 1px solid $works_indicator-color; 
+   background: $works_indicator-color;
+}
+.works_indicator-text-color {
+   color:$works_indicator-text-color;
+    margin: 0 60px;
+    cursor:default;
+    user-select:none;
+}
+.works__item {
+    list-style: none;
+    padding-bottom: 20px;
+}
+.works__link {
+    font-size: 140%;
+    font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+     /* Small tablet to big tablet: from 768px to 1023px*/
+    .works_indicator-color {
+        border: 1px solid $works_indicator-color; 
+    }
+    .works__content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+        .works__content_margin-text,
+    .works__content_margin-titel,
+    .works__content_margin-titel{
+        margin: 5% 5% 5% 5%;
+    }
+    .works__content_margin-text,
+    .works__content_margin-titel,
+    .works__content_margin-titel,
+    .works__content {
+        transition: all 1s ease;
+    }
+    .works_background {
+    background-image: url(../../img/block_content/works_background_medium.png);
+	background-image: -webkit-image-set( "../../img/block_content/works_background_medium.png" 1x,  "../../img/block_content/works_background.png" 2x);
+  	background-image: image-set ("../../img/block_content/works_background_medium.png" 1x, "../../img/block_content/works_background.png" 2x);
+    }
+    
+}
+@media screen and (max-width: 767px) {
+     /* Small phones to small tablets: from 481px to 767px*/
+    .flex_direction_column-mobile {
+        flex-direction: column;
+    }
+    .works__item {
+        display: inline-block;
+    }
+    .works__text {
+        padding: 0;
+    }
+    .works__text__buttom-line {
+        margin-left: 70px;
+    }
+    .works__list {
+        width: 90vw;
+    }
+    .works__list_mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right: 40px;
+    }
+    .works__text__buttom-line,
+    .works__list_mobile,
+    .works__list {
+        transition: all 1s ease;
+    }
+	.works {
+		background-size: 70%, 70%;
+	}
+    .works_background {
+        background: none;
+        background-color: #3d3d3d;
+    }
+    
+}
+@media screen and (max-width: 479px) {
+     /* Small phones: from 0 to 480px*/
+	   .works__list_mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding-left: 0 !important;
+		   padding-right: 0;
+    }
+
+}

@@ -1,0 +1,319 @@
+$conacts_text-color:#333;
+$conacts_indicator-color:#333;
+
+.contacts_padding {
+	padding-top:10%;
+}
+
+.contacts_flex {
+	display: flex;
+	flex-flow: row wrap;
+	background: url(../../img/block_content/contacts_background.png) no-repeat -10% 50%;
+	background-size: 55%;
+    background-color: #ffffff;
+}
+.contacts__buttom-line {
+	height: 2px;
+    width: 150px;
+    background-color: #f36f21;
+    margin-bottom: 50px;
+}
+.contacts__content__title__item_padding {
+	padding-top: 15px;
+}
+.contacts__content__title__item {
+	font-weight: normal;
+	color: #333;
+	
+}
+.contacts__content__title__item,
+.contacts__content__title__list,
+.contacts__content__title,
+.contacts__title{
+	text-transform: uppercase;
+}
+.contacts__title {
+	margin-bottom:0;
+	text-indent: 0.3em;
+}
+.contacts__content {
+	flex-grow: 10;
+	background-position: bottom;
+}
+.contacts__content__two {
+	flex-grow:16;
+	//background-image: url(../../img/block_content/contacts_map.png);
+	//background-size: cover;
+	//background-repeat: no-repeat;
+}
+.form {
+	position: absolute;
+	bottom: 0px;
+    left: 0px;
+	flex-grow: 5;
+}
+.contacts__page__indicator {
+	flex-grow: 0.1;
+	position: absolute;
+	top: 0px;
+    right: 0px;
+}
+.contacts__content_margin-top {
+	margin-top: 10px;
+}
+.contacts__content__title {
+	margin-bottom: 5px;
+}
+.contacts__content__title {
+	text-align:inherit;
+	
+}
+.ion-ios-email-outline,
+.ion-ios-telephone,
+.ion-location {
+	padding-left: 5px;
+	font-size: 250%;
+	width: 50px;
+	color: #333;
+}
+.contacts__content__title__list {
+	margin-right: 20px;
+	align-content:flex-end;
+	
+}
+.contacts__content__title {
+	font-size: 125%;
+}
+
+.contacts__content__title__list {
+	font-weight: bold;
+	color: #333;
+	font-size: 130%;
+}
+.contacts__indicator__text::after  {
+    content: 'Contacts';
+    width: 70px;
+    position: relative;
+    display: block;
+     top: -2px;
+    left: 20px;
+    text-transform:uppercase;
+	    font-size: 80%;
+}
+.contacts_indicator-color {
+   border: 1px solid $conacts_indicator-color; 
+   background: $conacts_indicator-color;
+}
+.contacts_indicator-text-color {
+   color:$conacts_text-color;
+    margin: 0 60px;
+    cursor:default;
+    user-select:none;
+}
+.contacts__type-color_list-style {
+    display: flex;
+    list-style: none;
+}
+.form_desktop {
+	display: flex;
+}
+.form_mobile {
+		display: none;
+}
+@media screen and (max-width: 1200px) {
+     /* Small tablet to big tablet: from 768px to 1023px*/
+    .contacts_indicator-color  {
+        border: 1px solid $conacts_indicator-color; 
+    }
+	.contacts__content {
+		flex-grow: 3;
+		transition: all 1s ease
+	}
+	.contacts_flex {
+	background: url(../../img/block_content/contacts_background.png) no-repeat 5% 50%;
+	background-size: 30%;
+    background-color: #ffffff;
+}
+}
+@media screen and (max-width: 767px) {
+     /* Small phones to small tablets: from 481px to 767px*/
+	.contacts_flex {
+	flex-direction: column;
+}
+	       .map-box {
+            width: 100%;
+            height: auto;
+            position: relative;
+
+        }
+       #map {
+            width: 100%;
+            height: 300px;
+            z-index: 0;
+            position: relative;
+        }
+	.contacts__content {
+		flex-grow: 2;
+		
+	}
+	.form_desktop {
+		display: none;
+	}
+	.form_mobile {
+		display: flex;
+	}
+	.contacts_flex {
+		background: url(../../img/block_content/contacts_background.png) no-repeat -10% 50%;
+		background-size: 55%;
+        background-color: #ffffff;
+	}
+}
+@media screen and (max-width: 479px) {
+     /* Small phones: from 0 to 480px*/
+	
+	.contacts__content_p_mobile,
+	.contacts__form_p_mobile,
+	.contacts_flex {
+		transition: all 1s ease;
+		};
+	.contacts__content_p_mobile {
+		padding: 5% 0;
+	}
+	.contacts__form_p_mobile {
+		padding: 5% 5%;
+	}
+	.contacts_flex {
+		padding-bottom: 10%;
+	}
+	.form-style-9 {
+		    margin-left: 0% !important;
+	}
+	.form-button {
+		height: 40px;
+	}
+	.contacts_flex {
+		background: url(../../img/block_content/contacts_background.png) no-repeat 45% 10%;
+		background-size: 105%;
+        background-color: #ffffff;
+	}
+}
+
+//form 
+.form-style-9{
+    max-width: 350px;
+    background: #ffffff;
+    padding: 20px;
+    //margin: 50px auto;
+	margin-left: 5%;
+	margin-bottom: 5%;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+}
+.form-style-9 ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.form-style-9 ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    padding: 14px;
+    outline: none;
+    border: 1px solid #b9b9b9;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+    box-shadow: 0 0 5px #b9b9b9;
+    border:1px solid #b9b9b9;
+}
+.form-style-9 ul li .field-split{
+    width: 48%;
+}
+.form-style-9 ul li .field-full{
+    width: 100%;
+}
+.form-style-9 ul li input.align-left{
+    float:left;
+}
+.form-style-9 ul li input.align-right{
+    float:right;
+}
+.form-style-9 ul li textarea{
+    width: 100%;
+    height: 100px;
+}
+.form-style-9 ul li input[type="button"], 
+.form-style-9 ul li input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #b9b9b9;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #b9b9b9;
+    box-shadow: inset 0px 1px 0px 0px #b9b9b9;
+    background-color: #216288;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover, 
+.form-style-9 ul li input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #28739E;
+}
+.form-style-margin-top {
+	margin-top: 14px;
+    margin-bottom: 9px;
+}
+.form-style-margin-left {
+	margin-left: 4px;
+} 
+.form-style-margin-right {
+	margin-right: 4px;
+} 
+.form-button {
+	width: 35%;
+	height: 40px;
+	background-color: #ffffff;
+	border-bottom: 2px solid #f36f21;
+	border-left:none;
+	border-right: none;
+	border-top:none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.error {
+	color: red;
+}
+.success {
+	color: green;
+}
+.error,
+.success {
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.map-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+#map {
+    width: 100%;
+    height: 630px;
+    z-index: 0;
+    position: relative;
+	border:none; 
+}
+
+

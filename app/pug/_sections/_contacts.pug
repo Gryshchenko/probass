@@ -1,0 +1,60 @@
+section.contacts_flex#section-7
+	.contacts__content.flex.flex_center.opacity.js--wp-7 
+		.flex.flex_center.flex_direction_column.contacts__content_p_mobile
+			h3.contacts__title Contacts
+			span.contacts__buttom-line
+			h5.contacts__content__title Miro Angel LTD
+			div.flex.flex_direction.contacts__content_margin-top
+				i.ion-ios-email-outline
+				div.contacts__content__title__item.contacts__content__title__item_padding  info@probass.audio
+			div.flex.flex_direction.contacts__content_margin-top
+				i.ion-ios-telephone
+				div.contacts__content__title__item.contacts__content__title__item_padding  +1 ( 541 ) 754 - 3010
+			div.flex.flex_direction.contacts__content_margin-top
+				i.ion-location
+				div
+					div.contacts__content__title__item.contacts__content__title__item_padding  2777 Loker Ave West,
+					div.contacts__content__title__item Carlsband, CALIFORNIA
+					div.contacts__content__title__item 92010, USA
+	.contacts__content__two.flex
+		.map-box.flex.flex-flow_wrap 
+			iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428285.70865430764!2d-117.58457448197075!3d33.004247425115516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc74981ea71bf5%3A0xdbb91b19faad815f!2zMjc3NyBMb2tlciBBdmUgVywgQ2FybHNiYWQsIENBIDkyMDEwLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1498759763419")#map
+			div.form.form_desktop.flex_start.flex_align-end.contacts__form_p_mobile 
+				div#page-wrapper
+				div#form-messages 
+				form(method='post' action='mailer.php')#ajax-contact.form-style-9
+					ul
+						li.field
+							input(type='text' name='name' required placeholder='Your name')#name.field-style.field-split.align-left.form-style-margin-right
+							input(type='email' name='email' required placeholder='Your email')#email.field-style.field-split.align-right.form-style-margin-left 
+						li.field
+							input(type='text' name='object' required placeholder='Object')#name.field-style.field-full.align-none.form-style-margin-top 
+						li.field
+							textarea(name='message' required placeholder='Message')#message.field-style
+						li.field
+							button.form-button(type='submit') Send Message
+			div.page__indicator.flex.flex_direction_column.flex_center.flex_align-center.contacts__page__indicator 
+				div.page__indicator__list.contacts_indicator-color
+				div.page__indicator__list.contacts_indicator-color
+				div.page__indicator__list.contacts_indicator-color
+				div.page__indicator__list.contacts_indicator-color
+				div.page__indicator__list.contacts_indicator-color
+				div.page__indicator__list.contacts_indicator-color
+				div.page__indicator__line.contacts_indicator-color
+				div.page__indicator__number.contacts_indicator-text-color 07
+				div.page__indicator__text.contacts__indicator__text.contacts_indicator-color.page__indicator__margin
+	.contacts__content__two.form_mobile.flex_center
+		div.contacts__form_p_mobile 
+			div.page-wrapper
+			div.form-messages
+			form(method='post' action='mailer.php').ajax-contact.form-style-9
+				ul
+					li.field
+						input(type='text' name='name' required placeholder='Your name').name.field-style.field-split.align-left.form-style-margin-right
+						input(type='email' name='email' required placeholder='Your email').email.field-style.field-split.align-right.form-style-margin-left 
+					li.field
+						input(type='text' name='object' required placeholder='Object').name.field-style.field-full.align-none.form-style-margin-top 
+					li.field
+						textarea(name='message' required placeholder='Message').message.field-style
+					li.field
+						button.form-button(type='submit') Send Message

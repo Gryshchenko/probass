@@ -1,0 +1,212 @@
+$header_indicator-text-color:#fff;
+$header_indicator-color:#fff;
+
+.backgroundFixed {
+  background-image: url(../../img/header/background.png);
+  background-image: -webkit-image-set( "../../img/header/background.png" 1x,  "../../img/header/background_large.png" 2x);
+  background-image: image-set ("../../img/header/background.png" 1x, "../../img/header/background_large.png" 2x);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1000;
+}
+
+.header,
+.about,
+.works,
+.content-block,
+.content-block_two,
+.content-block_three,
+.whywe,
+.contacts_flex {
+    padding-left: 8%;}
+    
+//.header {
+//    
+//	background-position: center;
+//    background-size: cover;
+//    background-attachment: fixed;
+    //height: 100vh;
+//}
+.header {
+	background: url(../../img/header/ss.png) no-repeat 2% 98%;
+}
+.main_logo {
+   height: 100vh; 
+}
+
+.header__title {
+	height: 85px;
+	width: 280px;
+	background-image: url(../../img/header/logo_text.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.header__text,
+.header__text__buttom-line {
+    color: #fff;
+}
+.header__content__two {
+    width: 330px;
+}
+.header__main-logo {
+    height: 100%;
+}
+.header__title {
+    margin-top: 0;
+    //font-size: 600%;
+}
+.header__text {
+	width: 290px;
+    margin-bottom: 0;
+}
+
+.header__text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 120%;
+}
+.header__title {
+    margin-bottom: 15px;
+}
+.header__text__buttom-line {
+    height: 2px;
+    width: 150px;
+    background-color: #f36f21;
+}
+.header__indicator__text::after  {
+    content: 'Home';
+    position: relative;
+    display: block;
+     top: -2px;
+    left: 20px;
+    text-transform:uppercase;
+	color: #ffffff;
+	    font-size: 80%;
+
+}
+.header_indicator-color {
+   border: 1px solid $header_indicator-text-color; 
+   background: $header_indicator-text-color;
+}
+.header_indicator-text-color {
+   color:$header_indicator-text-color;
+    margin: 0 60px;
+    cursor:default;
+    user-select:none;
+}
+@media screen and (max-width: 1300px) {
+     /* Small tablet to big tablet: from 768px to 1023px*/
+    .header,
+    .about,
+    .works,
+    .content-block,
+    .content-block_two,
+    .content-block_three,
+    .whywe,
+    .contacts_flex {
+        padding-left: 0;
+    transition: all 1s ease;}
+
+}
+@media screen and (max-width: 1200px) {
+     /* Small tablet to big tablet: from 768px to 1023px*/
+    	.header__content__two {
+    	width: 200px;
+	}
+    .header,
+    .about,
+    .works,
+    .content-block,
+    .content-block_two,
+    .content-block_three,
+    .whywe,
+    .contacts_flex {
+        padding-left: 0;
+    	transition: all 1s ease;
+	}
+
+}
+@media screen and (max-width: 1023px) {
+     /* Small tablet to big tablet: from 768px to 1023px*/
+     .logo_titel {
+        font-size: 150%;
+         transition: all 1s ease;
+    }
+	 .header_indicator-color {
+        border: 1px solid $header_indicator-color; 
+    }
+
+	.logo_titel {
+		transition: all 1s ease;
+	}
+	
+	.header__content__two {
+    	width: 150px;
+	}
+	.backgroundFixed {
+        background-image: url(../../img/header/background_medium.png);
+		background-image: -webkit-image-set( "../../img/header/background_medium.png" 1x,  "../../img/header/background.png" 2x);
+  		background-image: image-set ("../../img/header/background_medium.png" 1x, "../../img/header/background.png" 2x);
+    }
+    
+}
+@media screen and (max-width: 767px) {
+     /* Small phones to small tablets: from 481px to 767px*/
+	.backgroundFixed {
+        background-image: url(../../img/header/mobile.jpg);
+    }
+	.header {
+		background: none;
+	}
+    .header__title {
+       height: 60px;
+		width: 202px;
+    }
+    .header__text {
+        font-size:  130%;
+    }
+    .logo_titel {
+        font-size: 200%;
+    }
+	
+    .logo_titel,
+    .header__text,
+    .header__title,
+	.header__content,
+	.header__main-logo {
+        transition: all 1s ease;
+    }
+
+	 .header__content__two {
+    	width: 175px;
+	}
+
+}
+@media screen and (max-width: 479px) {
+     /* Small phones: from 0 to 480px*/
+
+	.header__title,
+	.header__text {
+		margin-left: 15px;
+	}
+	
+	
+
+}
+@media screen and (max-height: 500px) {
+     /* Small phones: from 0 to 480px*/
+	.nav__item {
+    	line-height: 0.5;
+	}
+	.header__content
+	.nav__item, {
+		transition: all 1s ease;
+	}
+}
+

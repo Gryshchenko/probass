@@ -1,0 +1,98 @@
+    .content-block__img__slider {
+      -webkit-font-smoothing: antialiased;
+      color: #232525;
+      padding-top:70px;
+    }
+
+    #slides,
+    #slides2,
+    #slides3,
+	#slides4,
+    #slides5,
+	#slides6{
+      display: none;
+      margin-bottom:50px;
+    }
+
+    .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+    a {
+      color: #333
+    }
+    a:hover,
+    a:active {
+      color: #f36f21
+    }
+    .navbar {
+      overflow: hidden
+    }
+    #slides {
+      display: none
+    }
+    .container {
+      margin: 0 auto
+    }
+    @media screen and (max-width: 1224px) {
+     /* Small tablet to big tablet: from 768px to 1023px*/
+        .container {
+            width: 740px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 540px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+         /* Small phones to small tablets: from 481px to 767px*/
+        .container {
+            width: 520px;
+        }
+
+    }
+    @media screen and (max-width: 479px) {
+         /* Small phones: from 0 to 480px*/
+        .container {
+            width: 290px;
+        }
+    }
